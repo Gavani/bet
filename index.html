@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title></title>
+    <link rel="stylesheet" href="./assets/styles/foundation.css"/>
+    <link rel="stylesheet" href="./assets/styles/app.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="dashboard" role="main">
+        <nav class="navigation">
+          <button class="navigation__hamburger-button">
+            <div class="hamburger-menu-icon">
+              <div class="hamburger-menu-icon__bar hamburger-menu-icon__bar--top"></div>
+              <div class="hamburger-menu-icon__bar hamburger-menu-icon__bar--middle"></div>
+              <div class="hamburger-menu-icon__bar hamburger-menu-icon__bar--bottom"></div>
+            </div>
+          </button>
+          <div class="navigation__wrapper">
+            <div class="navigation__logo"><a class="navigation__logo-link" href="#">
+                <div class="navigation__logo-img"><img src="assets/img/logo/logo.png" alt="Logo"/></div>
+                <div class="navigation__logo-text"> 
+                  <p>tipify</p>
+                </div></a></div>
+            <div class="navigation__scrollbar-list" id="navScroll">
+              <ul class="navigation__list" id="navScrollContainer">
+                <li class="navigation__item">
+                  <div class="navigation__item-wrapper"><a class="navigation__item-link" href="#">
+                      <div class="navigation__item-icon"><img src="assets/img/icons/pie-chart.png" alt="Icon"/></div>
+                      <div class="navigation__item-text"> 
+                        <p>Portfolio</p>
+                      </div></a></div>
+                </li>
+                <li class="navigation__item">
+                  <div class="navigation__item-wrapper"><a class="navigation__item-link" href="#">
+                      <div class="navigation__item-icon"><img src="assets/img/icons/incognito.png" alt="Icon"/></div>
+                      <div class="navigation__item-text"> 
+                        <p>Analysts</p>
+                      </div></a></div>
+                </li>
+                <li class="navigation__item navigation__item_active">
+                  <div class="navigation__item-wrapper"><a class="navigation__item-link" href="#">
+                      <div class="navigation__item-icon"><img src="assets/img/icons/account.png" alt="Icon"/></div>
+                      <div class="navigation__item-text"> 
+                        <p>Subscriptions</p>
+                      </div></a></div>
+                </li>
+                <li class="navigation__item">
+                  <div class="navigation__item-wrapper"><a class="navigation__item-link" href="#">
+                      <div class="navigation__item-icon"><img src="assets/img/icons/question.png" alt="Icon"/></div>
+                      <div class="navigation__item-text"> 
+                        <p>Support</p>
+                      </div></a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <aside class="dashboard__aside aside">
+          <div class="aside__leaderboard">
+            <div class="head-text">
+              <div class="icon"><img src="assets/img/icons/target.png" alt="Icon"/></div>
+              <div class="text">
+                <p>LEADERBOARD</p>
+              </div>
+            </div>
+            <ul class="aside__leaderboard-list">
+              <li class="aside__leaderboard-item aside__leaderboard-item_head">
+                <div class="aside__leaderboard-item-cel">
+                  <p>Analyst</p>
+                </div>
+                <div class="aside__leaderboard-item-cel aside__leaderboard-item-cel_middle">
+                  <p>Profit (U)</p>
+                </div>
+                <div class="aside__leaderboard-item-cel">
+                  <p>Change</p>
+                </div>
+              </li>
+              <li class="aside__leaderboard-item">
+                <div class="aside__leaderboard-item-cel">
+                  <div class="aside__leaderboard-item-cel-img"><img src="assets/img/icons/tw.png" alt="Icon"/></div>
+                  <div class="aside__leaderboard-item-cel-text">
+                    <p>tw</p>
+                  </div>
+                </div>
+                <div class="aside__leaderboard-item-cel aside__leaderboard-item-cel_middle">
+                  <div class="aside__leaderboard-item-cel-text">
+                    <p>2178</p>
+                  </div>
+                </div>
+                <div class="aside__leaderboard-item-cel">
+                  <div class="aside__leaderboard-item-cel-icon"><img src="assets/img/icons/caret-arrow-up.png" alt="Icon"/></div>
+                  <div class="aside__leaderboard-item-cel-text aside__leaderboard-item-cel-text_color">
+                    <p>5%</p>
+                  </div>
+                </div>
+              </li>
+              <li class="aside__leaderboard-item">
+                <div class="aside__leaderboard-item-cel">
+                  <div class="aside__leaderboard-item-cel-img"><img src="assets/img/icons/tw.png" alt="Icon"/></div>
+                  <div class="aside__leaderboard-item-cel-text">
+                    <p>tw</p>
+                  </div>
+                </div>
+                <div class="aside__leaderboard-item-cel aside__leaderboard-item-cel_middle">
+                  <div class="aside__leaderboard-item-cel-text">
+                    <p>2178</p>
+                  </div>
+                </div>
+                <div class="aside__leaderboard-item-cel">
+                  <div class="aside__leaderboard-item-cel-icon"><img src="assets/img/icons/caret-arrow-up.png" alt="Icon"/></div>
+                  <div class="aside__leaderboard-item-cel-text aside__leaderboard-item-cel-text_color">
+                    <p>5%</p>
+                  </div>
+                </div>
+              </li>
+              <li class="aside__leaderboard-item">
+                <div class="aside__leaderboard-item-cel">
+                  <div class="aside__leaderboard-item-cel-img"><img src="assets/img/icons/tw.png" alt="Icon"/></div>
+                  <div class="aside__leaderboard-item-cel-text">
+                    <p>tw</p>
+                  </div>
+                </div>
+                <div class="aside__leaderboard-item-cel aside__leaderboard-item-cel_middle">
+                  <div class="aside__leaderboard-item-cel-text">
+                    <p>2178</p>
+                  </div>
+                </div>
+                <div class="aside__leaderboard-item-cel">
+                  <div class="aside__leaderboard-item-cel-icon"><img src="assets/img/icons/caret-arrow-up.png" alt="Icon"/></div>
+                  <div class="aside__leaderboard-item-cel-text aside__leaderboard-item-cel-text_color">
+                    <p>5%</p>
+                  </div>
+                </div>
+              </li>
+              <li class="aside__leaderboard-item">
+                <div class="aside__leaderboard-item-cel">
+                  <div class="aside__leaderboard-item-cel-img"><img src="assets/img/icons/tw.png" alt="Icon"/></div>
+                  <div class="aside__leaderboard-item-cel-text">
+                    <p>tw</p>
+                  </div>
+                </div>
+                <div class="aside__leaderboard-item-cel aside__leaderboard-item-cel_middle">
+                  <div class="aside__leaderboard-item-cel-text">
+                    <p>2178</p>
+                  </div>
+                </div>
+                <div class="aside__leaderboard-item-cel">
+                  <div class="aside__leaderboard-item-cel-icon"><img src="assets/img/icons/caret-arrow-up.png" alt="Icon"/></div>
+                  <div class="aside__leaderboard-item-cel-text aside__leaderboard-item-cel-text_color">
+                    <p>5%</p>
+                  </div>
+                </div>
+              </li>
+              <li class="aside__leaderboard-item">
+                <div class="aside__leaderboard-item-cel">
+                  <div class="aside__leaderboard-item-cel-img"><img src="assets/img/icons/tw.png" alt="Icon"/></div>
+                  <div class="aside__leaderboard-item-cel-text">
+                    <p>tw</p>
+                  </div>
+                </div>
+                <div class="aside__leaderboard-item-cel aside__leaderboard-item-cel_middle">
+                  <div class="aside__leaderboard-item-cel-text">
+                    <p>2178</p>
+                  </div>
+                </div>
+                <div class="aside__leaderboard-item-cel">
+                  <div class="aside__leaderboard-item-cel-icon"><img src="assets/img/icons/caret-arrow-up.png" alt="Icon"/></div>
+                  <div class="aside__leaderboard-item-cel-text aside__leaderboard-item-cel-text_color">
+                    <p>5%</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="aside__results">
+            <div class="head-text">
+              <div class="icon"><img src="assets/img/icons/target.png" alt="Icon"/></div>
+              <div class="text">
+                <p>results</p>
+              </div>
+            </div>
+            <div class="aside__results-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th> 
+                      <p>Teams</p>
+                    </th>
+                    <th> 
+                      <p>Profit (U)</p>
+                    </th>
+                    <th> 
+                      <p>Result</p>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="aside__results-table-td-wrap">
+                        <div class="aside__results-table-td-team">
+                          <div class="aside__results-table-td-team-img"><img src="assets/img/logo/machester.png " alt="Manchester Logo"/></div>
+                          <div class="aside__results-table-td-team-text">
+                            <p>
+                               Manu <span class="v-text">V</span></p>
+                          </div>
+                        </div>
+                        <div class="aside__results-table-td-team">
+                          <div class="aside__results-table-td-team-img"><img class="aside__results-table-td-img" src="assets/img/logo/paris.png " alt="Paris Logo"/></div>
+                          <div class="aside__results-table-td-team-text">
+                            <p>
+                               manc  </p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="aside__results-table-td-profit-text">
+                        <p>+ 100 </p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="aside__results-table-td-result-icon"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="aside__results-table-td-wrap">
+                        <div class="aside__results-table-td-team">
+                          <div class="aside__results-table-td-team-img"><img src="assets/img/logo/machester.png " alt="Manchester Logo"/></div>
+                          <div class="aside__results-table-td-team-text">
+                            <p>
+                               Manu <span class="v-text">V</span></p>
+                          </div>
+                        </div>
+                        <div class="aside__results-table-td-team">
+                          <div class="aside__results-table-td-team-img"><img class="aside__results-table-td-img" src="assets/img/logo/paris.png " alt="Paris Logo"/></div>
+                          <div class="aside__results-table-td-team-text">
+                            <p>
+                               manc  </p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="aside__results-table-td-profit-text">
+                        <p>+ 100 </p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="aside__results-table-td-result-icon"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="aside__results-table-td-wrap">
+                        <div class="aside__results-table-td-team">
+                          <div class="aside__results-table-td-team-img"><img src="assets/img/logo/machester.png " alt="Manchester Logo"/></div>
+                          <div class="aside__results-table-td-team-text">
+                            <p>
+                               Manu <span class="v-text">V</span></p>
+                          </div>
+                        </div>
+                        <div class="aside__results-table-td-team">
+                          <div class="aside__results-table-td-team-img"><img class="aside__results-table-td-img" src="assets/img/logo/paris.png " alt="Paris Logo"/></div>
+                          <div class="aside__results-table-td-team-text">
+                            <p>
+                               manc  </p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="aside__results-table-td-profit-text">
+                        <p>+ 100 </p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="aside__results-table-td-result-icon"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="aside__results-table-td-wrap">
+                        <div class="aside__results-table-td-team">
+                          <div class="aside__results-table-td-team-img"><img src="assets/img/logo/machester.png " alt="Manchester Logo"/></div>
+                          <div class="aside__results-table-td-team-text">
+                            <p>
+                               Manu <span class="v-text">V</span></p>
+                          </div>
+                        </div>
+                        <div class="aside__results-table-td-team">
+                          <div class="aside__results-table-td-team-img"><img class="aside__results-table-td-img" src="assets/img/logo/paris.png " alt="Paris Logo"/></div>
+                          <div class="aside__results-table-td-team-text">
+                            <p>
+                               manc  </p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="aside__results-table-td-profit-text">
+                        <p>+ 100 </p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="aside__results-table-td-result-icon"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="aside__results-table-td-wrap">
+                        <div class="aside__results-table-td-team">
+                          <div class="aside__results-table-td-team-img"><img src="assets/img/logo/machester.png " alt="Manchester Logo"/></div>
+                          <div class="aside__results-table-td-team-text">
+                            <p>
+                               Manu <span class="v-text">V</span></p>
+                          </div>
+                        </div>
+                        <div class="aside__results-table-td-team">
+                          <div class="aside__results-table-td-team-img"><img class="aside__results-table-td-img" src="assets/img/logo/paris.png " alt="Paris Logo"/></div>
+                          <div class="aside__results-table-td-team-text">
+                            <p>
+                               manc  </p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="aside__results-table-td-profit-text">
+                        <p>+ 100 </p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="aside__results-table-td-result-icon"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="aside__results-table-td-wrap">
+                        <div class="aside__results-table-td-team">
+                          <div class="aside__results-table-td-team-img"><img src="assets/img/logo/machester.png " alt="Manchester Logo"/></div>
+                          <div class="aside__results-table-td-team-text">
+                            <p>
+                               Manu <span class="v-text">V</span></p>
+                          </div>
+                        </div>
+                        <div class="aside__results-table-td-team">
+                          <div class="aside__results-table-td-team-img"><img class="aside__results-table-td-img" src="assets/img/logo/paris.png " alt="Paris Logo"/></div>
+                          <div class="aside__results-table-td-team-text">
+                            <p>
+                               manc  </p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="aside__results-table-td-profit-text">
+                        <p>+ 100 </p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="aside__results-table-td-result-icon"></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="aside__results-footer"><a class="aside__results-footer-link" href="#">
+                <div class="aside__results-footer-text">
+                  <p>View all results</p>
+                </div>
+                <div class="aside__results-footer-icon"><img src="assets/img/icons/arrow-right.png" alt="Icon"/></div></a></div>
+          </div>
+        </aside>
+        <section class="section dashboard__panel">
+          <div class="topbar dashboard__topbar">
+            <div class="topbar__slot">
+              <ul class="topbar__list">
+                <li class="topbar__item">
+                  <div class="topbar__item-content">
+                    <h2>
+                       OVERALL<br/>REPORT</h2>
+                  </div>
+                </li>
+                <li class="topbar__item">
+                  <div class="topbar__item-number">
+                    <p>60%</p>
+                  </div>
+                  <div class="topbar__item-text">
+                    <p>Win Rate</p>
+                  </div>
+                </li>
+                <li class="topbar__item">
+                  <div class="topbar__item-number">
+                    <p>2178</p>
+                  </div>
+                  <div class="topbar__item-text">
+                    <p>Profit (Units)</p>
+                  </div>
+                </li>
+                <li class="topbar__item">
+                  <div class="topbar__item-number topbar__item-number_color-green">
+                    <p>+24%</p>
+                  </div>
+                  <div class="topbar__item-text">
+                    <p>Performance (Month)</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tobpar__user-data">
+              <div class="tobpar__user-data-wrap">
+                <div class="dropdown-trigger tobpar__user-data-dropdown" data-target="topBarDropdown">
+                  <div class="tobpar__user-data-dropdown-icon"><img src="assets/img/icons/user.png" alt="User Icon"/></div>
+                  <div class="tobpar__user-data-dropdown-name">
+                    <p>umar.salman365</p>
+                    <p class="tobpar__user-data-dropdown-name_warning">not verified</p>
+                  </div>
+                  <div class="tobpar__user-data-dropdown-caret"><img src="assets/img/icons/caret-down.png" alt="Icon"/></div>
+                </div>
+                <ul class="dropdown-content tobpar__user-data-dropdown-content-list" id="topBarDropdown">
+                  <li class="tobpar__user-data-dropdown-content-item"><a class="tobpar__user-data-dropdown-content-item-link" href="#">
+                      <div class="tobpar__user-data-dropdown-content-item-icon"><img src="assets/img/icons/settings.png" alt="Icon"/></div>
+                      <div class="tobpar__user-data-dropdown-content-item-text">
+                        <p>Settings</p>
+                      </div>
+                      <div class="tobpar__user-data-dropdown-content-item-arrow"></div></a></li>
+                  <li class="tobpar__user-data-dropdown-content-item"><a class="tobpar__user-data-dropdown-content-item-link" href="#">
+                      <div class="tobpar__user-data-dropdown-content-item-icon"><img src="assets/img/icons/notifications.png" alt="Icon"/></div>
+                      <div class="tobpar__user-data-dropdown-content-item-text">
+                        <p>Notifications</p>
+                      </div>
+                      <div class="tobpar__user-data-dropdown-content-item-arrow"></div></a></li>
+                  <li class="tobpar__user-data-dropdown-content-item"><a class="tobpar__user-data-dropdown-content-item-link tobpar__user-data-dropdown-content-item-link_fs" href="#">
+                      <div class="tobpar__user-data-dropdown-content-item-icon"></div>
+                      <div class="tobpar__user-data-dropdown-content-item-text">
+                        <p>Log out</p>
+                      </div>
+                      <div class="tobpar__user-data-dropdown-content-item-arrow"></div></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard__panel-wrapper">
+            <div class="dashboard__panel-chart-wrapper">
+              <div class="dashboard__panel-chart-head">
+                <div class="head-text">
+                  <div class="icon"><img src="assets/img/icons/target.png" alt="Icon"/></div>
+                  <div class="text">
+                    <p>PERFORMANCE OVERVIEW</p>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard__panel-chart-info-wrapper">
+                <div class="dashboard__panel-chart-info-btns-wrapper">
+                  <div class="dashboard__panel-chart-info-btns-text">
+                    <p>Stakes</p>
+                  </div>
+                  <div class="dashboard__panel-chart-info-btns"><a class="stakes__btn_green" href="#">
+                      <p>h</p></a><a class="stakes__btn_yellow active" href="#">
+                      <p>m</p></a><a class="stakes__btn_red" href="#">
+                      <p>l</p></a><a class="stakes__btn_blue" href="#">
+                      <p>all</p></a></div>
+                </div>
+                <div class="dashboard__panel-chart-info-profit">
+                  <h2>+2178</h2>
+                  <p>+200 (10%) this month</p>
+                </div>
+                <div class="dashboard__panel-chart-info-btns-wrapper">
+                  <div class="dashboard__panel-chart-info-btns-text dashboard__panel-chart-info-btns-text_right">
+                    <p>Your Analysts</p>
+                  </div>
+                  <div class="dashboard__panel-chart-info-btns"><a class="analysts__btn_red" href="#">
+                      <p>tw</p></a><a class="analysts__btn_red active" href="#">
+                      <p>tw</p></a><a class="analysts__btn_red" href="#">
+                      <p>tw</p></a></div>
+                </div>
+              </div>
+              <div class="dashboard__panel-chart">
+                <canvas id="chart" width="900px" height="550"></canvas>
+              </div>
+              <div class="dashboard__panel-chart-footer-wrapper">
+                <ul class="dashboard__panel-chart-footer-list">
+                  <li class="dashboard__panel-chart-footer-item"><a class="active" href="#">2y</a></li>
+                  <li class="dashboard__panel-chart-footer-item"><a href="#">1y</a></li>
+                  <li class="dashboard__panel-chart-footer-item"><a href="#">8m</a></li>
+                  <li class="dashboard__panel-chart-footer-item"><a href="#">6m</a></li>
+                  <li class="dashboard__panel-chart-footer-item"><a href="#">3m</a></li>
+                  <li class="dashboard__panel-chart-footer-item"><a href="#">all</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="dashboard__panel-tips-wrapper">
+              <div class="dashboard__panel-tips-tabs-wrapper">
+                <ul class="tabs dashboard__panel-tips-tabs-list">
+                  <li class="tab dashboard__panel-tips-tabs-item"><a class="active" href="#currentTips">CURRENT TIPS</a></li>
+                </ul>
+                <div class="dashboard__panel-tips-tabs-select">
+                  <div class="input-field">
+                    <select>
+                      <option value="1" selected="selected">All</option>
+                      <option value="2">All 2</option>
+                      <option value="3">All 3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard__panel-tips-tabs-content-wrapper">
+                <div class="dashboard__panel-tips-tabs-content" id="currentTips">
+                  <div class="dashboard__panel-tips-tabs-content-item">
+                    <div class="dashboard__panel-tips-tabs-content-item-name-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-name">
+                        <p>CHAMPIONS LEAGUE</p>
+                      </div>
+                      <div class="dashboard__panel-tips-tabs-content-item-name-date">
+                        <p>20.01</p>
+                      </div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-img-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-img"><img src="assets/img/logo/paris.png" alt="PSG logo"/></div>
+                      <div class="dashboard__panel-tips-tabs-content-item-img"><img src="assets/img/logo/machester.png" alt="Manchester logo"/></div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-team-name-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-team-name">
+                        <p>psg</p>
+                      </div>
+                      <div class="dashboard__panel-tips-tabs-content-item-team-name-v">
+                        <p>v</p>
+                      </div>
+                      <div class="dashboard__panel-tips-tabs-content-item-team-name">
+                        <p>MANCHESTER UTD</p>
+                      </div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-link-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-link"><a href="#">psg "win to nil"</a></div>
+                      <div class="dashboard__panel-tips-tabs-content-item-link-devider">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                      </div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-rating-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-rating-img"><img src="assets/img/icons/bar-chart.png" alt="Icon"/></div>
+                      <div class="dashboard__panel-tips-tabs-content-item-rating">
+                        <div class="dashboard__panel-tips-tabs-content-item-rating-nmbr">
+                          <p>1.68</p>
+                        </div>
+                      </div>
+                      <div class="dashboard__panel-tips-tabs-content-item-rating-logo"><a href="#"><img src="assets/img/logo/oddschecker.png" alt="Oddschecker Logo"/></a></div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-footer"><a class="dashboard__panel-tips-tabs-content-item-footer-link" href="#">
+                        <div class="dashboard__panel-tips-tabs-content-item-footer-text">
+                          <p>View all results</p>
+                        </div>
+                        <div class="dashboard__panel-tips-tabs-content-item-footer-icon"><img src="assets/img/icons/arrow-right.png" alt="Icon"/></div></a></div>
+                  </div>
+                  <div class="dashboard__panel-tips-tabs-content-item">
+                    <div class="dashboard__panel-tips-tabs-content-item-name-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-name">
+                        <p>CHAMPIONS LEAGUE</p>
+                      </div>
+                      <div class="dashboard__panel-tips-tabs-content-item-name-date">
+                        <p>20.01</p>
+                      </div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-img-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-img"><img src="assets/img/logo/paris.png" alt="PSG logo"/></div>
+                      <div class="dashboard__panel-tips-tabs-content-item-img"><img src="assets/img/logo/machester.png" alt="Manchester logo"/></div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-team-name-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-team-name">
+                        <p>psg</p>
+                      </div>
+                      <div class="dashboard__panel-tips-tabs-content-item-team-name-v">
+                        <p>v</p>
+                      </div>
+                      <div class="dashboard__panel-tips-tabs-content-item-team-name">
+                        <p>MANCHESTER UTD</p>
+                      </div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-link-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-link"><a href="#">psg "win to nil"</a></div>
+                      <div class="dashboard__panel-tips-tabs-content-item-link-devider">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                      </div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-rating-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-rating-img"><img src="assets/img/icons/bar-chart.png" alt="Icon"/></div>
+                      <div class="dashboard__panel-tips-tabs-content-item-rating">
+                        <div class="dashboard__panel-tips-tabs-content-item-rating-nmbr">
+                          <p>1.68</p>
+                        </div>
+                      </div>
+                      <div class="dashboard__panel-tips-tabs-content-item-rating-logo"><a href="#"><img src="assets/img/logo/oddschecker.png" alt="Oddschecker Logo"/></a></div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-footer"><a class="dashboard__panel-tips-tabs-content-item-footer-link" href="#">
+                        <div class="dashboard__panel-tips-tabs-content-item-footer-text">
+                          <p>View all results</p>
+                        </div>
+                        <div class="dashboard__panel-tips-tabs-content-item-footer-icon"><img src="assets/img/icons/arrow-right.png" alt="Icon"/></div></a></div>
+                  </div>
+                  <div class="dashboard__panel-tips-tabs-content-item">
+                    <div class="dashboard__panel-tips-tabs-content-item-name-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-name">
+                        <p>CHAMPIONS LEAGUE</p>
+                      </div>
+                      <div class="dashboard__panel-tips-tabs-content-item-name-date">
+                        <p>20.01</p>
+                      </div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-img-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-img"><img src="assets/img/logo/paris.png" alt="PSG logo"/></div>
+                      <div class="dashboard__panel-tips-tabs-content-item-img"><img src="assets/img/logo/machester.png" alt="Manchester logo"/></div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-team-name-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-team-name">
+                        <p>psg</p>
+                      </div>
+                      <div class="dashboard__panel-tips-tabs-content-item-team-name-v">
+                        <p>v</p>
+                      </div>
+                      <div class="dashboard__panel-tips-tabs-content-item-team-name">
+                        <p>MANCHESTER UTD</p>
+                      </div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-link-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-link"><a href="#">psg "win to nil"</a></div>
+                      <div class="dashboard__panel-tips-tabs-content-item-link-devider">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                      </div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-rating-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-rating-img"><img src="assets/img/icons/bar-chart.png" alt="Icon"/></div>
+                      <div class="dashboard__panel-tips-tabs-content-item-rating">
+                        <div class="dashboard__panel-tips-tabs-content-item-rating-nmbr">
+                          <p>1.68</p>
+                        </div>
+                      </div>
+                      <div class="dashboard__panel-tips-tabs-content-item-rating-logo"><a href="#"><img src="assets/img/logo/oddschecker.png" alt="Oddschecker Logo"/></a></div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-footer"><a class="dashboard__panel-tips-tabs-content-item-footer-link" href="#">
+                        <div class="dashboard__panel-tips-tabs-content-item-footer-text">
+                          <p>View all results</p>
+                        </div>
+                        <div class="dashboard__panel-tips-tabs-content-item-footer-icon"><img src="assets/img/icons/arrow-right.png" alt="Icon"/></div></a></div>
+                  </div>
+                  <div class="dashboard__panel-tips-tabs-content-item">
+                    <div class="dashboard__panel-tips-tabs-content-item-name-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-name">
+                        <p>CHAMPIONS LEAGUE</p>
+                      </div>
+                      <div class="dashboard__panel-tips-tabs-content-item-name-date">
+                        <p>20.01</p>
+                      </div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-img-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-img"><img src="assets/img/logo/paris.png" alt="PSG logo"/></div>
+                      <div class="dashboard__panel-tips-tabs-content-item-img"><img src="assets/img/logo/machester.png" alt="Manchester logo"/></div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-team-name-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-team-name">
+                        <p>psg</p>
+                      </div>
+                      <div class="dashboard__panel-tips-tabs-content-item-team-name-v">
+                        <p>v</p>
+                      </div>
+                      <div class="dashboard__panel-tips-tabs-content-item-team-name">
+                        <p>MANCHESTER UTD</p>
+                      </div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-link-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-link"><a href="#">psg "win to nil"</a></div>
+                      <div class="dashboard__panel-tips-tabs-content-item-link-devider">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                      </div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-rating-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-rating-img"><img src="assets/img/icons/bar-chart.png" alt="Icon"/></div>
+                      <div class="dashboard__panel-tips-tabs-content-item-rating">
+                        <div class="dashboard__panel-tips-tabs-content-item-rating-nmbr">
+                          <p>1.68</p>
+                        </div>
+                      </div>
+                      <div class="dashboard__panel-tips-tabs-content-item-rating-logo"><a href="#"><img src="assets/img/logo/oddschecker.png" alt="Oddschecker Logo"/></a></div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-footer"><a class="dashboard__panel-tips-tabs-content-item-footer-link" href="#">
+                        <div class="dashboard__panel-tips-tabs-content-item-footer-text">
+                          <p>View all results</p>
+                        </div>
+                        <div class="dashboard__panel-tips-tabs-content-item-footer-icon"><img src="assets/img/icons/arrow-right.png" alt="Icon"/></div></a></div>
+                  </div>
+                  <div class="dashboard__panel-tips-tabs-content-item">
+                    <div class="dashboard__panel-tips-tabs-content-item-name-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-name">
+                        <p>CHAMPIONS LEAGUE</p>
+                      </div>
+                      <div class="dashboard__panel-tips-tabs-content-item-name-date">
+                        <p>20.01</p>
+                      </div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-img-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-img"><img src="assets/img/logo/paris.png" alt="PSG logo"/></div>
+                      <div class="dashboard__panel-tips-tabs-content-item-img"><img src="assets/img/logo/machester.png" alt="Manchester logo"/></div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-team-name-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-team-name">
+                        <p>psg</p>
+                      </div>
+                      <div class="dashboard__panel-tips-tabs-content-item-team-name-v">
+                        <p>v</p>
+                      </div>
+                      <div class="dashboard__panel-tips-tabs-content-item-team-name">
+                        <p>MANCHESTER UTD</p>
+                      </div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-link-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-link"><a href="#">psg "win to nil"</a></div>
+                      <div class="dashboard__panel-tips-tabs-content-item-link-devider">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                      </div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-rating-wrapper">
+                      <div class="dashboard__panel-tips-tabs-content-item-rating-img"><img src="assets/img/icons/bar-chart.png" alt="Icon"/></div>
+                      <div class="dashboard__panel-tips-tabs-content-item-rating">
+                        <div class="dashboard__panel-tips-tabs-content-item-rating-nmbr">
+                          <p>1.68</p>
+                        </div>
+                      </div>
+                      <div class="dashboard__panel-tips-tabs-content-item-rating-logo"><a href="#"><img src="assets/img/logo/oddschecker.png" alt="Oddschecker Logo"/></a></div>
+                    </div>
+                    <div class="dashboard__panel-tips-tabs-content-item-footer"><a class="dashboard__panel-tips-tabs-content-item-footer-link" href="#">
+                        <div class="dashboard__panel-tips-tabs-content-item-footer-text">
+                          <p>View all results</p>
+                        </div>
+                        <div class="dashboard__panel-tips-tabs-content-item-footer-icon"><img src="assets/img/icons/arrow-right.png" alt="Icon"/></div></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./assets/js/foundation.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
